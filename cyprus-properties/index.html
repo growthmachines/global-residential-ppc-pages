@@ -959,7 +959,9 @@
                                     <div class="inner-column">
                                       <h3 class="title mb-3 text-anim">Schedule a Consultation</h3>
                                       <div class="contact-form wow fadeInUp" data-wow-delay=".1s">
-                                        <form method="post" action="thankyou.php" class="contact__form">
+                                        <form method="post" action="/api/lead" class="contact__form">
+                                          <input type="hidden" name="campaign" value="Cyprus Properties">
+                                          <input type="hidden" name="redirect_to" value="/cyprus-properties/thank-you.html">
                                           <input type="hidden" name="leadsource" class="leadsource" value="">
                                           <input type="text" name="website" style="display:none;" tabindex="-1" autocomplete="off">
                                           <div class="row">
@@ -1185,7 +1187,9 @@
                           <div class="inner-column">
                             <h3 class="title mb-4 text-anim">Book Your Appointment Now</h3>
                             <div class="contact-form">
-                              <form method="post" action="thankyou.php" class="contact__form">
+                              <form method="post" action="/api/lead" class="contact__form">
+                                <input type="hidden" name="campaign" value="Cyprus Properties">
+                                <input type="hidden" name="redirect_to" value="/cyprus-properties/thank-you.html">
                                 <input type="text" name="website" style="display:none;" tabindex="-1" autocomplete="off">
                                 <div class="row">
                                   <div class="form-input col-lg-6 col-md-6">
