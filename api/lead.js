@@ -8,7 +8,7 @@
 // Required Vercel environment variables (Project → Settings → Environment Variables):
 //   RESEND_API_KEY   — Resend.com API key (used to send the email)
 //   LEAD_FROM        — sender address, e.g. "Global Residential <leads@lp.global-residential.com>"
-//   LEAD_TO          — recipient(s), comma-separated, e.g. "kelly.yeung@global-residential.com,ahsan.azeem@useo.ae"
+//   LEAD_TO          — recipient(s), comma-separated, e.g. "kelly.yeung@global-residential.com"
 //
 // Optional:
 //   LEAD_REPLY_TO_FIELD — form field name to use as Reply-To (default: "email")
