@@ -30,7 +30,36 @@
   <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
-  
+  <style>
+    /* WhatsApp icon — teal colour by default, white on hover (all locations) */
+    .wa-icon,
+    .gr-sidebar-footer .gr-btn-whatsapp img {
+      filter: invert(47%) sepia(16%) saturate(544%) hue-rotate(155deg) brightness(95%) contrast(88%);
+      transition: filter 0.25s ease;
+    }
+    .gr-btn-whatsapp:hover .wa-icon,
+    .gr-sidebar-footer .gr-btn-whatsapp:hover img {
+      filter: brightness(0) invert(1);
+    }
+
+    /* Brochure popup textarea — match site input styling */
+    #brochurePopup textarea {
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      padding: 12px 0;
+      font-size: 15px;
+      font-family: inherit;
+      color: inherit;
+      resize: none;
+      outline: none;
+      display: block;
+    }
+    #brochurePopup textarea::placeholder { color: #999; }
+    #brochurePopup textarea:focus { border-bottom-color: #d1ab6a; }
+  </style>
+
 </head>
 
 <body>
@@ -226,12 +255,9 @@
                       <span class="gr-meta-item gr-yield"><i class="tji-chart"></i> Est. Rental Yield: <strong>7.8–8%</strong></span>
                     </div>
                     <div class="gr-property-actions">
-                      <a href="javascript:void(0)" class="gr-btn gr-btn-primary view-details-trigger" data-property="harmony-villas">
-                        Read More
-                      </a>
-                      <a href="https://api.whatsapp.com/send/?phone=971568283332&text=Hi%2C%20I%27m%20interested%20in%20Harmony%20Villas%20in%20Paralimni%2C%20Cyprus.%20Please%20send%20me%20more%20details." class="gr-btn gr-btn-whatsapp" rel="noopener">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                      </a>
+                      <a href="javascript:void(0)" class="gr-btn gr-btn-primary view-details-trigger" data-property="harmony-villas">Read More</a>
+                      <a href="javascript:void(0)" class="gr-btn gr-btn-outline brochure-trigger" data-property="harmony-villas" data-brochure="Harmony_Villas_Brochure.pdf" data-name="Harmony Villas">Request Brochure</a>
+                      <a href="https://api.whatsapp.com/send/?phone=971568283332&text=Hi%2C%20I%27m%20interested%20in%20Harmony%20Villas%20in%20Paralimni%2C%20Cyprus.%20Please%20send%20me%20more%20details." class="gr-btn gr-btn-whatsapp" rel="noopener"><img src="assets/images/icons/whatsapp-dark.webp" alt="" class="wa-icon" style="width:16px;height:16px;"> WhatsApp</a>
                       <a href="javascript:void(0)" class="gr-btn gr-btn-dark form-trigger" data-heading="Book Consultation About Harmony Villas">Book Consultation</a>
                     </div>
                   </div>
@@ -263,12 +289,9 @@
                       <span class="gr-meta-item gr-yield"><i class="tji-chart"></i> Est. Rental Yield: <strong>N/A</strong></span>
                     </div>
                     <div class="gr-property-actions">
-                      <a href="javascript:void(0)" class="gr-btn gr-btn-primary view-details-trigger" data-property="hidden-gem">
-                        Read More
-                      </a>
-                      <a href="https://api.whatsapp.com/send/?phone=971568283332&text=Hi%2C%20I%27m%20interested%20in%20Hidden%20Gem%20Apartments%20in%20Paralimni%2C%20Cyprus.%20Please%20send%20me%20more%20details." class="gr-btn gr-btn-whatsapp" rel="noopener">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                      </a>
+                      <a href="javascript:void(0)" class="gr-btn gr-btn-primary view-details-trigger" data-property="hidden-gem">Read More</a>
+                      <a href="javascript:void(0)" class="gr-btn gr-btn-outline brochure-trigger" data-property="hidden-gem" data-brochure="Hidden_Gem_Brochure.pdf" data-name="Hidden Gem Apartments">Request Brochure</a>
+                      <a href="https://api.whatsapp.com/send/?phone=971568283332&text=Hi%2C%20I%27m%20interested%20in%20Hidden%20Gem%20Apartments%20in%20Paralimni%2C%20Cyprus.%20Please%20send%20me%20more%20details." class="gr-btn gr-btn-whatsapp" rel="noopener"><img src="assets/images/icons/whatsapp-dark.webp" alt="" class="wa-icon" style="width:16px;height:16px;"> WhatsApp</a>
                       <a href="javascript:void(0)" class="gr-btn gr-btn-dark form-trigger" data-heading="Book Consultation About Hidden Gem Apartments">Book Consultation</a>
                     </div>
                   </div>
@@ -308,12 +331,9 @@
                       <span class="gr-meta-item gr-yield"><i class="tji-chart"></i> Completion: <strong>Oct 2028</strong></span>
                     </div>
                     <div class="gr-property-actions">
-                      <a href="assets/pdf/elysia-blu-brochure.pdf" class="gr-btn gr-btn-outline" download>
-                        <i class="tji-download"></i> Download Brochure
-                      </a>
-                      <a href="https://api.whatsapp.com/send/?phone=971568283332&text=Hi%2C%20I%27m%20interested%20in%20Elysia%20Blu%20in%20Paphos%2C%20Cyprus.%20Please%20send%20me%20more%20details." class="gr-btn gr-btn-whatsapp" rel="noopener">
-                        <i class="fab fa-whatsapp"></i> WhatsApp
-                      </a>
+                      <a href="javascript:void(0)" class="gr-btn gr-btn-primary view-details-trigger" data-property="elysia-blu">Read More</a>
+                      <a href="javascript:void(0)" class="gr-btn gr-btn-outline brochure-trigger" data-property="elysia-blu" data-brochure="elysia_blu_brochure.pdf" data-name="Elysia Blu">Request Brochure</a>
+                      <a href="https://api.whatsapp.com/send/?phone=971568283332&text=Hi%2C%20I%27m%20interested%20in%20Elysia%20Blu%20in%20Paphos%2C%20Cyprus.%20Please%20send%20me%20more%20details." class="gr-btn gr-btn-whatsapp" rel="noopener"><img src="assets/images/icons/whatsapp-dark.webp" alt="" class="wa-icon" style="width:16px;height:16px;"> WhatsApp</a>
                       <a href="javascript:void(0)" class="gr-btn gr-btn-dark form-trigger" data-heading="Book Consultation About Elysia Blu">Book Consultation</a>
                     </div>
                   </div>
@@ -921,7 +941,50 @@
         </div>
       </div>
       <!-- End Form Popup -->
-      
+
+      <!-- Start Brochure Request Popup -->
+      <div id="brochurePopup" class="popup">
+        <div class="popup-content contact-section"><span class="close brochure-close">&times;</span>
+          <div class="form-column">
+            <div class="inner-column">
+              <h3 class="title mb-4 text-anim">Request the Elysia Blu Brochure</h3>
+              <div class="contact-form">
+                <form method="post" action="/api/lead" class="contact__form">
+                  <input type="hidden" name="campaign" value="Elysia Blu Brochure">
+                  <input type="hidden" name="redirect_to" value="/cyprus-properties/brochure-downloaded.html">
+                  <input type="text" name="website" style="display:none;" tabindex="-1" autocomplete="off">
+                  <div class="row">
+                    <div class="form-input col-lg-12">
+                      <input type="text" name="full_name" placeholder="Full Name*" required>
+                    </div>
+                    <div class="form-input col-lg-12">
+                      <input type="email" name="email" placeholder="Email Address*" required>
+                    </div>
+                    <div class="form-input col-lg-12">
+                      <input type="tel" id="phone3" name="phone_number" placeholder="Phone Number*" required>
+                      <input type="hidden" name="full_phone_number" value="">
+                      <div id="phone-error3" class="phone-error error">Please enter a valid phone number</div>
+                    </div>
+                    <div class="form-input col-lg-12">
+                      <textarea name="message" placeholder="Message (optional)" rows="3"></textarea>
+                    </div>
+                    <div class="form-input col-lg-12">
+                      <div class="submit-btn">
+                        <button class="tj-primary-btn" type="submit">
+                          <span class="btn-text"><span>Request Brochure</span></span>
+                          <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Brochure Request Popup -->
+
       <!-- Property Details Sidebar Drawer -->
       <div id="propertySidebar" class="gr-sidebar-drawer">
         <div class="gr-sidebar-overlay"></div>
@@ -999,6 +1062,9 @@
             </a>
             <a id="sidebarConsultBtn" href="javascript:void(0)" class="gr-btn gr-btn-primary">
               Book Consultation
+            </a>
+            <a id="sidebarBrochureBtn" href="javascript:void(0)" class="gr-btn gr-btn-outline" style="grid-column:1/-1;justify-content:center;">
+              Request Brochure
             </a>
           </div>
         </div>
@@ -1120,52 +1186,50 @@
             whatsapp: "https://api.whatsapp.com/send/?phone=971568283332&text=Hi%2C%20I%27m%20interested%20in%20Hidden%20Gem%20Apartments%20in%20Paralimni%2C%20Cyprus.%20Please%20send%20me%20more%20details.",
             consultationHeading: "Book Consultation About Hidden Gem Apartments"
           },
-          "elaia-hills": {
+          "elysia-blu": {
             title: "Elysia Blu",
             location: "Paphos, Cyprus",
             images: [
-            "assets/images/property/elaia-hills.webp"
+            "assets/images/property/elysia-blu/4.webp",
+            "assets/images/property/elysia-blu/1.webp",
+            "assets/images/property/elysia-blu/2.webp",
+            "assets/images/property/elysia-blu/3.webp",
+            "assets/images/property/elysia-blu/5.webp",
+            "assets/images/property/elysia-blu/6.webp",
+            "assets/images/property/elysia-blu/7.webp",
+            "assets/images/property/elysia-blu/8.webp",
+            "assets/images/property/elysia-blu/9.webp",
+            "assets/images/property/elysia-blu/10.webp",
+            "assets/images/property/elysia-blu/11.webp",
+            "assets/images/property/elysia-blu/12.webp"
             ],
             type: "Apartment",
-            bedrooms: "2",
-            bathrooms: "2",
-            desc: "An exclusive collection of luxury 2-bedroom apartments in Geroskipou, Paphos, offering panoramic sea and city views, premium finishes, and resort-style amenities including a pool, gym, landscaped gardens, and underground parking. Perfectly blending tranquil hillside living with modern convenience and strong investment appeal.",
+            bedrooms: "Studio, 1–3 Bed",
+            bathrooms: "1–2",
+            desc: "Elysia Blu is a premium residential community located in Paphos, Cyprus, offering a resort-style lifestyle seamlessly blended with contemporary architecture. Situated just a 10-minute walk from the Mediterranean coastline, the multi-phase development by Pafilia Property Developers consists of 200 apartments across 10 residential buildings, thoughtfully designed to promote connection, comfort, and everyday well-being.",
             features: [
-            "Concealed VRV cooling system",
-            "Underfloor heating in all rooms",
-            "Marble flooring",
-            "Italian ceramic flooring",
-            "Laminate wood flooring in bedrooms",
-            "Walk-in showers",
-            "Wall-mounted toilets",
-            "Energy Efficiency A aluminium system",
-            "Slim line thermal aluminium technology",
-            "Fireproof security entrance doors",
-            "Alarm system",
-            "Intercom system",
-            "Electric car gates",
-            "Provision for electric car charger",
-            "Marble kitchen counter tops (customer choice)",
-            "Corian kitchen counter tops option",
-            "Individually designed built-in wardrobes",
-            "3m high ceilings",
-            "2.4m high doors",
-            "Open-plan layouts",
-            "Expansive verandas",
-            "Panoramic sea views",
-            "Panoramic city views"
+            "Premium lifestyle-focused residential community",
+            "10 residential buildings comprising 200 total units",
+            "Multi-phase development structure (Phase 1A and 1B)",
+            "10-minute walk to the seafront",
+            "Starting price of €553,572",
+            "Completion scheduled for 30 October 2028",
+            "Rental program available on selected units",
+            "Structured payment plan (€10,000 + VAT reservation fee)",
+            "Developed by Pafilia — largest privately owned residential developer in Cyprus"
             ],
             amenities: [
-            "Common swimming pool (4x15m)",
-            "Changing room",
-            "Gym",
-            "Underground parking",
-            "Landscaped gardens",
-            "Private storage rooms",
-            "Covered parking",
-            "EV charging provision"
+            "Resort swimming pools and children's pools",
+            "Spa, sauna, and Jacuzzi",
+            "Fitness center and outdoor gym",
+            "Padel court and running track",
+            "Kids club and dedicated play area",
+            "Landscaped gardens and lounge spaces",
+            "On-site restaurant, café, and boutique market",
+            "Hotel-style reception lobby",
+            "Events program and on-site convenience"
             ],
-            whatsapp: "https://api.whatsapp.com/send/?phone=971568283332&text=Hi%2C%20I%27m%20interested%20in%20Elaia%20Hills%20in%20Paphos%2C%20Cyprus.%20Please%20send%20me%20more%20details.",
+            whatsapp: "https://api.whatsapp.com/send/?phone=971568283332&text=Hi%2C%20I%27m%20interested%20in%20Elysia%20Blu%20in%20Paphos%2C%20Cyprus.%20Please%20send%20me%20more%20details.",
             consultationHeading: "Book Consultation About Elysia Blu"
           }
         };
@@ -1283,6 +1347,71 @@
           }
         });
         
+        // Brochure popup open/close
+        const brochurePopup = document.getElementById('brochurePopup');
+        const brochureTitle = brochurePopup.querySelector('h3');
+        const brochureRedirectInput = brochurePopup.querySelector('[name="redirect_to"]');
+        const brochureCampaignInput = brochurePopup.querySelector('[name="campaign"]');
+
+        document.querySelectorAll('.brochure-trigger').forEach(function(btn) {
+          btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const propertySlug = this.dataset.property;
+            const brochureFile = this.dataset.brochure;
+            const propertyName = this.dataset.name;
+            // Update popup heading
+            brochureTitle.textContent = 'Request the ' + propertyName + ' Brochure';
+            // Update campaign field
+            if (brochureCampaignInput) brochureCampaignInput.value = propertyName + ' Brochure';
+            // Set redirect with property slug so thank-you page can trigger the download
+            if (brochureRedirectInput) brochureRedirectInput.value = '/cyprus-properties/brochure-downloaded.html?property=' + propertySlug;
+            brochurePopup.style.display = 'block';
+            document.body.classList.add('no-scroll');
+          });
+        });
+        document.querySelectorAll('.brochure-close').forEach(function(el) {
+          el.addEventListener('click', function() {
+            brochurePopup.style.display = 'none';
+            document.body.classList.remove('no-scroll');
+          });
+        });
+        brochurePopup.addEventListener('click', function(e) {
+          if (e.target === brochurePopup) {
+            brochurePopup.style.display = 'none';
+            document.body.classList.remove('no-scroll');
+          }
+        });
+
+        // intl-tel-input for brochure form phone field
+        var phone3Input = document.querySelector('#phone3');
+        if (phone3Input) {
+          var iti3 = window.intlTelInput(phone3Input, {
+            utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js',
+            preferredCountries: ['ae', 'sa', 'kw', 'qa', 'bh', 'om'],
+            separateDialCode: true,
+          });
+          phone3Input.closest('form').addEventListener('submit', function() {
+            var hiddenField = this.querySelector('[name="full_phone_number"]');
+            if (hiddenField) hiddenField.value = iti3.getNumber();
+          });
+        }
+
+        // Sidebar brochure button
+        const sidebarBrochureBtn = document.getElementById('sidebarBrochureBtn');
+        sidebarBrochureBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          const currentPropId = sidebar.dataset.propertyId;
+          if (!currentPropId) return;
+          const cardElement = document.querySelector(`.gr-property-card[data-property="${currentPropId}"]`);
+          if (cardElement) {
+            const brochureBtn = cardElement.querySelector('.brochure-trigger');
+            if (brochureBtn) {
+              closeSidebar();
+              setTimeout(() => { brochureBtn.click(); }, 150);
+            }
+          }
+        });
+
         // Consultation button programmatic click trigger
         sidebarConsultBtn.addEventListener('click', function(e) {
           e.preventDefault();

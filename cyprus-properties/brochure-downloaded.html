@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<!-- Thank-you pages should never be indexed. -->
+<meta name="robots" content="noindex,nofollow">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NHMHL54H');</script>
+<!-- End Google Tag Manager -->
+
+<title>Brochure Request Received — Global Residential</title>
+
+<link rel="shortcut icon" href="assets/images/favicon.webp" type="image/x-icon">
+
+<style>
+  * { box-sizing: border-box; }
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #F5F2EE;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .logo img { height: 50px; margin-bottom: 40px; }
+  .box { max-width: 620px; }
+  .title {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 500;
+    color: #d1ab6a;
+    margin: 0 0 16px;
+  }
+  .text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #555;
+    margin: 0 0 32px;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #28202d;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+  }
+  .btn:hover { background: #3a2f45; }
+  .btn-arrow { font-size: 18px; line-height: 1; }
+  .download-note {
+    font-size: 14px;
+    color: #999;
+    margin-top: 20px;
+  }
+  .download-note a { color: #d1ab6a; }
+
+  @media (max-width: 575px) {
+    .title { font-size: 28px; line-height: 38px; }
+    .text { font-size: 16px; line-height: 26px; }
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHMHL54H"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<section class="page">
+  <div class="logo">
+    <img src="assets/images/logo.webp" alt="Global Residential">
+  </div>
+  <div class="box">
+    <h1 class="title">Your Brochure is On Its Way!</h1>
+    <p class="text">
+      Thank you for your interest. Your brochure download should begin automatically.
+      One of our advisors will also be in touch shortly to answer any questions you may have.
+    </p>
+    <a href="https://global-residential.com/" class="btn">
+      Go to Homepage <span class="btn-arrow">&rarr;</span>
+    </a>
+    <p class="download-note" id="downloadNote" style="display:none;">
+      If your download did not start automatically, <a id="downloadLink" href="#">click here to download</a>.
+    </p>
+  </div>
+</section>
+
+<script>
+  // Map property slugs to their brochure files
+  var brochureMap = {
+    'harmony-villas': 'assets/brochures/Harmony_Villas_Brochure.pdf',
+    'hidden-gem':     'assets/brochures/Hidden_Gem_Brochure.pdf',
+    'elysia-blu':     'assets/brochures/elysia_blu_brochure.pdf'
+  };
+
+  var params = new URLSearchParams(window.location.search);
+  var propertySlug = params.get('property');
+  var brochureFile = propertySlug && brochureMap[propertySlug];
+
+  if (brochureFile) {
+    // Trigger automatic download
+    var link = document.createElement('a');
+    link.href = brochureFile;
+    link.download = '';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Show fallback manual download link
+    var note = document.getElementById('downloadNote');
+    var dlLink = document.getElementById('downloadLink');
+    if (note && dlLink) {
+      dlLink.href = brochureFile;
+      dlLink.download = '';
+      note.style.display = 'block';
+    }
+  }
+</script>
+
+</body>
+</html>

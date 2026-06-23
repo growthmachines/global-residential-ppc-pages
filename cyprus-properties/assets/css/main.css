@@ -1959,6 +1959,11 @@ START: CTA Section
     width: 40%;
   }
 }
+@media(min-width: 1200px) {
+  #brochurePopup .popup-content {
+    width: 28%;
+  }
+}
 
 @media(max-width: 547px) {
   .popup-content {
@@ -2506,14 +2511,9 @@ START: Property Card Buttons - Unified Outline
   margin-top: auto !important;
 }
 
-.gr-property-actions .gr-btn-primary {
-  grid-column: 1 / -1 !important;
-}
-
-.gr-property-actions .gr-btn-whatsapp {
-  grid-column: auto !important;
-}
-
+.gr-property-actions .gr-btn-primary,
+.gr-property-actions .gr-btn-outline,
+.gr-property-actions .gr-btn-whatsapp,
 .gr-property-actions .gr-btn-dark {
   grid-column: auto !important;
 }
@@ -2524,6 +2524,7 @@ START: Property Card Buttons - Unified Outline
     grid-template-columns: 1fr !important;
   }
   .gr-property-actions .gr-btn-primary,
+  .gr-property-actions .gr-btn-outline,
   .gr-property-actions .gr-btn-whatsapp,
   .gr-property-actions .gr-btn-dark {
     grid-column: 1 !important;
@@ -2822,4 +2823,7 @@ START: Property Card Buttons - Unified Outline
 /* Download Brochure full width */
 .gr-property-actions .gr-btn-outline {
   grid-column: 1 / -1;
+}
+.iti {
+  width: 100% !important;
 }
