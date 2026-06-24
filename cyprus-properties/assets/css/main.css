@@ -1021,9 +1021,6 @@ START: About CSS
 .tj-faq .accordion-item .accordion-body p:last-child {
   margin-bottom: 0;
 }
-/* .tj-faq .accordion-item.active .faq-title {
-border-bottom: 1px dashed var(--tj-color-border-1);
-} */
 .tj-faq .accordion-item.active .faq-title::after {
   content: "\e918";
 }
@@ -1032,11 +1029,11 @@ border-bottom: 1px dashed var(--tj-color-border-1);
     padding: 0 20px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+/* @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .tj-faq {
     padding-top: 40px;
   }
-}
+} */
 /**----------------------------------------
 START: Countup CSS
 ----------------------------------------*/
