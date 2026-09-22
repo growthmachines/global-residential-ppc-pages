@@ -2,46 +2,54 @@
 START: Theme Default CSS
 ----------------------------------------*/
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/inter/Inter_ExtraLight.ttf') format('truetype');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/inter/Inter_Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/inter/Inter_Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/montserrat/Montserrat-Medium.ttf') format('truetype');
+  font-family: 'Optima';
+  src: url('../fonts/optima/optima.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/montserrat/Montserrat-SemiBold.ttf') format('truetype');
-  font-weight: 600;
+  font-family: 'Lato';
+  src: url('../fonts/lato/Lato-Light.woff') format('woff');
+  src: url('../fonts/lato/Lato-Light.woff2') format('woff2');
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
-  font-weight: 700;
+  font-family: 'Lato';
+  src: url('../fonts/lato/Lato-Regular.woff') format('woff');
+  src: url('../fonts/lato/Lato-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Larken';
+  src: url('../fonts/larken/larken-light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Larken';
+  src: url('../fonts/larken/larken-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Larken';
+  src: url('../fonts/larken/larken-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Larken';
+  src: url('../fonts/larken/larken-bold.ttf') format('truetype');
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -49,8 +57,8 @@ START: Theme Default CSS
   /**
   @Font-Family Declaration
   */
-  --tj-ff-body: "Inter", sans-serif;
-  --tj-ff-heading: "Montserrat", sans-serif;
+  --tj-ff-body: "Lato", sans-serif;
+  --tj-ff-heading: "Optima", sans-serif;
   --tj-ff-fontawesome: "Font Awesome 6 Pro";
   /**
   @Font-weight Declaration
@@ -1417,7 +1425,7 @@ START: Hero CSS
   /* max-width: 715px; */
   /* color: var(--tj-color-common-white); */
   font-size: 50px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.2;
   margin-bottom: 30px;
 }
