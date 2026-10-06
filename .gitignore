@@ -3,3 +3,6 @@
 
 # Claude Code local config (launch config, scratch server, local permissions)
 .claude/
+
+# Editor-local settings
+.vscode/
